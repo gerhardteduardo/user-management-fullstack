@@ -1,5 +1,6 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Post, Body } from '@nestjs/common';
 import { AppService } from './app.service';
+import { CreateUserDto } from './dto/user.dto';
 
 @Controller()
 export class AppController {
@@ -13,8 +14,16 @@ export class AppController {
 
 @Controller('users')
 export class UsersController {
+  private users: CreateUserDto[] = [];
+
   @Get()
   getUsers() {
-    return [{ id: 1, name: 'Eduardo' }, { id: 2, name: 'Jorge' }, { id: 3, name: 'Thiago' }];
+    return this.users;
+  }
+
+  @Post()
+  createUser(@Body() body: CreateUserDto) {
+    this.users.push(body);
+    return { message: 'Usuário cadastrado com sucesso!', user: body };
   }
 }

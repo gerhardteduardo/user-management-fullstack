@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 interface User {
   id: number;
-  name: string;
+  username: string;
 }
 
 const UserList = () => {
@@ -30,7 +30,7 @@ const UserList = () => {
       {error && <p className="text-red-500">{error}</p>}
       <ul className="mt-2">
         {users.map((user) => (
-          <li key={user.id} className="p-2 border-b">{user.name}</li>
+          <li key={user.id} className="p-2 border-b">{user.username}</li>
         ))}
       </ul>
     </div>

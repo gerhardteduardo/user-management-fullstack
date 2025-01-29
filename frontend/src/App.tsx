@@ -1,14 +1,17 @@
-import UserList from "./pages/UserList"
-import UserRegister from "./pages/UserRegister"
+
+import AppRoutes from "./routes";
 
 function App() {
   return (
-    <div className="w-screen h-screen flex items-center justify-center bg-gray-50">
-      <div>
-      <UserList />
-      <UserRegister />
-      </div>
-    </div>
+    // <div className="w-screen h-screen flex items-center justify-center bg-gray-50">
+    //   <div>
+    // <Layout>
+    <AppRoutes />
+    
+    //   <UserList />
+    //   <UserRegister />
+    //   </Layout>
+    // </div>
   )
 }
 
