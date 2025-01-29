@@ -1,13 +1,14 @@
-import { Button } from "@/components/ui/button"
+import UserList from "./pages/UserList"
+import UserRegister from "./pages/UserRegister"
 
 function App() {
   return (
-    <>
-      <div className="items-center justify-center flex mt-10">
-          <h1 className="font-black text-5xl">Vite + React + Typescript + Tailwind +</h1>
-          <Button variant="destructive" className="mx-2 font-black text-xl">Shadcn/ui</Button>
+    <div className="w-screen h-screen flex items-center justify-center bg-gray-50">
+      <div>
+      <UserList />
+      <UserRegister />
       </div>
-    </>
+    </div>
   )
 }
 
