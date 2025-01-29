@@ -14,12 +14,12 @@ O projeto utiliza tecnologias modernas para garantir uma experiência fluida e e
 
 Este projeto foi desenvolvido com as seguintes tecnologias e ferramentas:  
 
-⚛️ React – Biblioteca para construção de interfaces dinâmicas
-🟦 TypeScript – Superset do JavaScript que adiciona tipagem estática
-🎨 Tailwind CSS – Framework de estilização utilitária
-⚡ Vite – Ferramenta de build rápida para projetos modernos
-🔧 Node.js – Ambiente de execução para o backend
-🌍 Git – Controle de versão e colaboração
+⚛️ React – Biblioteca para construção de interfaces dinâmicas  
+🟦 TypeScript – Superset do JavaScript que adiciona tipagem estática  
+🎨 Tailwind CSS – Framework de estilização utilitária  
+⚡ Vite – Ferramenta de build rápida para projetos modernos  
+🔧 Node.js – Ambiente de execução para o backend  
+🌍 Git – Controle de versão e colaboração  
 
 ## 🤝 Contribuições & Sugestões
 
