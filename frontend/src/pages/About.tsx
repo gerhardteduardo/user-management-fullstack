@@ -3,14 +3,11 @@ import minhaFoto from "../assets/react.svg";
 const About = () => {
   return (
     <div className="max-w-2xl mx-auto p-6 text-center">
-      {/* Foto no topo */}
       <img 
         src={minhaFoto} 
         alt="Minha Foto" 
         className="w-32 h-32 rounded-full mx-auto shadow-lg"
       />
-      
-      {/* Texto sobre você */}
       <h1 className="text-2xl font-bold mt-4">Sobre Mim</h1>
       <p className="mt-2 text-gray-600">
         Olá! Meu nome é Eduardo Gerhardt e sou um desenvolvedor apaixonado por tecnologia e inovação. 

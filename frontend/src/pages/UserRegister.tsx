@@ -14,7 +14,6 @@ function UserRegister() {
       setMessage("Preencha todos os campos!");
       return;
     }
-
     setLoading(true);
     setMessage("");
 
@@ -22,8 +21,6 @@ function UserRegister() {
       const response = await api.post("/users", { username, password });
       setMessage("Usuário cadastrado com sucesso!");
       console.log("Resposta do servidor:", response.data);
-
-      // Limpar os inputs
       setUsername("");
       setPassword("");
     } catch (error) {
@@ -35,8 +32,8 @@ function UserRegister() {
   };
 
   return (
-    <div className="p-10 flex flex-col border-2 rounded-lg w-96">
-      <h1 className="font-black text-xl">Cadastrar novo usuário</h1>
+    <div className="p-5 flex flex-col border-2 rounded-lg w-full mx-auto  bg-white shadow-md">
+      <h1 className="font-black text-xl">Cadastrar Usuário</h1>
       <Input
         type="text"
         className="mt-2"

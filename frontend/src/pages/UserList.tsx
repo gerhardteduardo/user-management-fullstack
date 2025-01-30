@@ -1,9 +1,12 @@
 import api from "@/services/api";
 import { useEffect, useState } from "react";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 interface User {
   id: number;
   username: string;
+  email: string;
+  status: string;
 }
 
 const UserList = () => {
@@ -24,15 +27,28 @@ const UserList = () => {
   }, []);
 
   return (
-    <div className="  p-10 flex flex-col border-2 rounded-lg">
-      <h1 className="font-black text-xl">Lista de Usuários</h1>
+    <div className="p-5 flex flex-col border-2 rounded-lg w-full mx-auto bg-white shadow-md">
+      <h1 className="font-black text-xl mb-4">Usuários Cadastrados</h1>
       {loading && <p>Carregando...</p>}
       {error && <p className="text-red-500">{error}</p>}
-      <ul className="mt-2">
-        {users.map((user) => (
-          <li key={user.id} className="p-2 border-b">{user.username}</li>
-        ))}
-      </ul>
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead>Nome</TableHead>
+            <TableHead>E-mail</TableHead>
+            <TableHead>Status</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {users.map((user) => (
+            <TableRow key={user.id}>
+              <TableCell className="font-medium">{user.username}</TableCell>
+              <TableCell>{user.username}</TableCell>
+              <TableCell>{user.status}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
     </div>
   );
 };
