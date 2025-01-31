@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 interface User {
-  id: number;
+  _id: number;
   username: string;
   email: string;
   status: string;
@@ -41,10 +41,10 @@ const UserList = () => {
         </TableHeader>
         <TableBody>
           {users.map((user) => (
-            <TableRow key={user.id}>
+            <TableRow key={user._id}>
               <TableCell className="font-medium">{user.username}</TableCell>
               <TableCell>{user.email}</TableCell>
-              <TableCell>{user.status}</TableCell>
+              <TableCell>{user._id}</TableCell>
             </TableRow>
           ))}
         </TableBody>
