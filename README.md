@@ -12,14 +12,22 @@ O projeto utiliza tecnologias modernas para garantir uma experiência fluida e e
 
 ## 🚀 Tecnologias Utilizadas
 
-Este projeto foi desenvolvido com as seguintes tecnologias e ferramentas:  
+Este projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 
+### Frontend
 ⚛️ React – Biblioteca para construção de interfaces dinâmicas  
 🟦 TypeScript – Superset do JavaScript que adiciona tipagem estática  
 🎨 Tailwind CSS – Framework de estilização utilitária  
 ⚡ Vite – Ferramenta de build rápida para projetos modernos  
-🔧 Node.js – Ambiente de execução para o backend  
+  
+### Backend
+🔥 Next.js – Framework full-stack para React, usado no backend e frontend  
+🛢 MongoDB – Banco de dados NoSQL escalável e flexível  
+  
+### Ferramentas e DevOps
 🌍 Git – Controle de versão e colaboração  
+🚀 Vercel – Plataforma de deploy otimizada para Next.js   
+
 
 ## 🤝 Contribuições & Sugestões
 
